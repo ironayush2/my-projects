@@ -1,0 +1,22 @@
+project url : https://oxence-react.vercel.app/
+
+font
+heading : 'Kumbh Sans', sans-serif
+
+body font : 'Catamaran', sans-serif
+
+also include font awesome and flaticon
+
+
+black: #293043
+
+body /p color: #696e7b
+
+orange : #fc653c
+light gray bakground: #f7f9fd
+ 
+
+footer-bottom gray background : #e9e9ec
+
+
+border color : rgba(0, 102, 255, 0.1)
