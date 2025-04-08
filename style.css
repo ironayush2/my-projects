@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.gola {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-part2 h4 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-part2 h4 span {
+    color: rgb(119, 113, 113);
+    margin: 13px;
+}
+.nav-part2 h5{
+    display: none;
+}
+.nav2 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 30px;
+}
+
+.nav2 h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ******** content******* */
+
+.content {
+    height: calc(100% - 140px);
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.text-content {
+    height: 40%;
+    width: 100%;
+    /* background-color: rgb(236, 229, 166); */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 6px;
+}
+
+.text-content::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 81, 0);
+}
+
+.elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1 {
+    /* font-size: 90px; */
+    font-size: 7vw;
+    font-weight: 100;
+}
+
+.img-content {
+    height: 60%;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.img-content::-webkit-scrollbar {
+    display: none;
+}
+
+.img-content img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* ****** mobile ***** */
+
+
+@media (max-width:600px) {
+
+    .nav {
+        height: 60px;    
+        padding: 0 20px;
+    }
+    .gola {
+        height: 16px;
+        width: 16px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .nav-part2 {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav-part2 h4 {
+        font-size: 14px;
+        font-weight: 600;
+        display: none;
+    }
+    .nav-part2 h4:nth-child(1){
+        display: initial;
+        margin-right: 10px;
+    }
+
+    .nav-part2 h4 span {
+        color: rgb(119, 113, 113);
+        margin-left: 10px;
+    }
+    .nav-part2 h5{
+        display: initial;
+    }
+    .nav-part2 h5 i{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .nav2 {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        gap: 14px;
+        padding: 0 15px;
+    }
+
+    .nav2 h3 {
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: rgb(104, 96, 96);
+    }
+
+    /* ******** content******* */
+
+    .content {
+        height: calc(100% - 120px);
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .text-content {
+        height: 30%;
+        width: 100%;
+        /* background-color: rgb(236, 229, 166); */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .text-content::-webkit-scrollbar {
+        background-color: transparent;
+        height: 6px;
+    }
+
+    .text-content::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 81, 0);
+    }
+
+    .elem {
+        flex-shrink: 0;
+        height: 100%;
+        width: 75%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .elem h1 {
+        white-space: nowrap;
+        font-size: 15vw;
+        font-weight: 300;
+}
+.img-content {
+    height: calc(100% - 30%);
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.img-content::-webkit-scrollbar {
+    display: none;
+}
+
+.img-content img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
